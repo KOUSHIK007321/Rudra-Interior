@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes curveBreath {
+  0% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(1.15);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.animate-curve-breath {
+  animation: curveBreath 6s ease-in-out infinite;
+  transform-origin: top;
+}
+
+/* Simple Diagonal Yellow → Black Animation */
+
+@keyframes diagonalGold {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animate-diagonal-gold {
+  background: #000000;
+  background: linear-gradient(314deg, rgba(0, 0, 0, 1) 15%, rgba(237, 193, 62, 1) 52%, rgba(0, 0, 0, 1) 89%);
+  background-size: 200% 200%;
+  animation: diagonalGold 15s ease-in-out infinite;
+}
+
