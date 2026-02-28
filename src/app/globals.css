@@ -67,3 +67,56 @@ body {
   animation: diagonalGold 15s ease-in-out infinite;
 }
 
+/* Our Services Section Styling */
+.services-grid {
+  display: grid;
+  gap: 1.5rem; /* gap-6 */
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 640px) {
+  .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1024px) {
+  .services-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.service-card {
+  background-color: #0a0a0a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 0.75rem; /* rounded-xl */
+  height: 12rem; /* h-48 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: relative;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  border-color: rgba(197, 160, 77, 0.5);
+  box-shadow: 0 0 25px rgba(197, 160, 77, 0.4);
+  z-index: 10;
+}
+
+.service-icon {
+  color: #c5a04d;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+.service-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.125rem; /* text-lg */
+}

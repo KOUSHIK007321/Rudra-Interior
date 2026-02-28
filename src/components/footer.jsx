@@ -112,70 +112,9 @@ export default function Footer() {
 
         </div>
 
-        {/* 🔹 BOTTOM GRID (3 Equal Columns Under Contact Row) */}
-        <div className="grid md:grid-cols-4 gap-16">
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-yellow-400 mb-6 font-semibold tracking-wide">
-              QUICK LINKS
-            </h3>
-
-            <ul className="space-y-4">
-              {quickLinks.map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-yellow-400 transition">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="text-yellow-400 mb-6 font-semibold tracking-wide">
-              SERVICES
-            </h3>
-
-            <ul className="space-y-4">
-              {services.map((item) => (
-                <li key={item}>
-                  <Link href="#" className="hover:text-yellow-400 transition">
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <button className="mt-6 bg-yellow-400 text-black px-8 py-2 font-semibold">
-              BUY NOW
-            </button>
-          </div>
-
-          {/* Recent Articles */}
-          <div className="md:col-span-2">
-            <h3 className="text-yellow-400 mb-6 font-semibold tracking-wide">
-              RECENT ARTICLES
-            </h3>
-
-            <ul className="space-y-4">
-              {articles.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <FiCalendar className="text-yellow-400 mt-1" />
-                  <span className="hover:text-yellow-400 transition cursor-pointer">
-                    {item}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-        </div>
-
         {/* Divider */}
         <div className="border-t border-gray-700 mt-16 pt-6 text-center text-gray-400 text-sm">
-          Copyright © 2021 Luxury Interior Pro . All Rights Reserved
+          Copyright © 2026 Luxury Interior Pro . All Rights Reserved
         </div>
 
       </div>

@@ -1,51 +1,50 @@
+"use client";
+
 import React from 'react';
+import { 
+  Bed, 
+  UtensilsCrossed, 
+  DoorOpen, 
+  Tv, 
+  Grid3X3, 
+  Armchair, 
+  Building2,
+  PlusSquare // Icon for "Others"
+} from 'lucide-react';
 
-const services = [
-  { title: "Bedroom Interior", icon: "🛏️" },
-  { title: "Modular Kitchen", icon: "🍴" },
-  { title: "Wardrobe & Storage", icon: "🚪" },
-  { title: "TV Unit", icon: "📺" },
-  { title: "False Ceiling", icon: "🔲" },
-  { title: "Custom Furniture", icon: "🛋️" },
-  { title: "Commercial Interior", icon: "🏢" },
-  { title: "Others", icon: "🟰" },
-];
+const OurServices = () => {
+  const services = [
+    { title: "Bedroom Interior", icon: <Bed size={40} /> },
+    { title: "Modular Kitchen", icon: <UtensilsCrossed size={40} /> },
+    { title: "Wardrobe & Storage", icon: <DoorOpen size={40} /> },
+    { title: "TV Unit", icon: <Tv size={40} /> },
+    { title: "False Ceiling", icon: <Grid3X3 size={40} /> },
+    { title: "Custom Furniture", icon: <Armchair size={40} /> },
+    { title: "Commercial Interior", icon: <Building2 size={40} /> },
+    { title: "Others", icon: <PlusSquare size={40} /> }, // New item added here
+  ];
 
-export default function ServicesSection() {
   return (
-    <section className="bg-[#b3952d] py-16 px-4 animate-diagonal-gold">
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-white text-center mb-12">Our Services</h2>
+    <section className="bg-[#121212]  border-[#800000] py-24 px-6 animate-diagonal-gold">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16 uppercase tracking-wider">
+          Our <span className="text-[#c5a04d]">Services</span>
+        </h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* The services-grid class from globals.css ensures a stable render */}
+        <div className="services-grid">
           {services.map((service, index) => (
-            <div
-              key={index}
-              className="
-                group relative flex flex-col items-center justify-center 
-                p-10 rounded-2xl bg-[#1a1608] text-white
-                transition-all duration-300 ease-out
-                cursor-pointer
-                hover:-translate-y-3
-                
-                /* 2. Bottom Shadow (The 'depth' shadow) */
-                hover:shadow-[0_20px_40px_rgba(0,0,0,0.5)]
-                
-                /* 3. The Glow (The 'light' effect from your image) */
-                /* Combining a thin ring with a colored spread shadow */
-                hover:ring-1 hover:ring-yellow-400 hover:drop-shadow-[0_35px_35px_rgba(255, 191, 0,0.25)]
-              "
-            >
-              <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">
+            <div key={index} className="service-card">
+              <div className="service-icon">
                 {service.icon}
               </div>
-              <p className="text-center font-bold text-lg uppercase tracking-tight">
-                {service.title}
-              </p>
+              <h3 className="service-title">{service.title}</h3>
             </div>
           ))}
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default OurServices;
