@@ -26,11 +26,11 @@ const HeroSlider = () => {
 
       {/* 1. Horizontal Sliding Track */}
       <div
-        className="flex h-full w-full transition-transform duration-[1000ms] ease-[cubic-bezier(0.65,0,0.35,1)]"
+        className="flex h-full w-full transition-transform duration-1000 ease-[cubic-bezier(0.65,0,0.35,1)]"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {slides.map((slide, index) => (
-          <div key={index} className="relative h-full w-full flex-shrink-0">
+          <div key={index} className="relative h-full w-full shrink-0">
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${slide.url})` }}

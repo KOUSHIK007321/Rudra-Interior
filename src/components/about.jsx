@@ -19,7 +19,7 @@ export default function AboutPage() {
     }, [])
 
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden animate-diagonal-gold">
+        <section className="relative min-h-screen flex items-center overflow-hidden animate-diagonal-gold ">
 
             {/* GOLD sweep layers (pure CSS) */}
             <div className="gold-sweep-wrap" aria-hidden="true"></div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
                 <div ref={ref} className="grid md:grid-cols-2 gap-12 items-center">
 
                     {/* LEFT content (reveals from left) */}
-                    <div className={`transition-all duration-900 ease-[cubic-bezier(.22,1,.36,1)] ${visible ? "opacity-100 -translate-x-0" : "opacity-0 -translate-x-6"}`}>
+                    <div className={`transition-all duration-900 ease-[cubic-bezier(.22,1,.36,1)] ${visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-6"}`}>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-yellow-400 mb-6">
                             Artistic Excellence in Every Detail
                         </h2>

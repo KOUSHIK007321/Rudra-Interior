@@ -91,24 +91,8 @@ export default function Footer() {
               <FaTwitter className="bg-sky-500 p-2 rounded-full w-9 h-9" />
             </div>
           </div>
+          
 
-          {/* Address */}
-          <div className="flex items-start gap-5">
-            <FiMapPin className="text-yellow-400 text-3xl mt-1" />
-            <div>
-              <p>322 Willis Avenue</p>
-              <p>Los Angeles, California, US</p>
-            </div>
-          </div>
-
-          {/* Phone */}
-          <div className="flex items-start gap-5">
-            <FiPhone className="text-yellow-400 text-3xl mt-1" />
-            <div>
-              <p>123 456 7890</p>
-              <p>7890 654 321</p>
-            </div>
-          </div>
 
         </div>
 

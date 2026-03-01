@@ -6,7 +6,7 @@ import OurProjects from "@/components/OurProjects"
 
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen w-full overflow-hidden bg-black">
+    <main className="relative min-h-screen w-full overflow-hidden bg-black" id="home">
       {/* Curved Shape */}
       <svg
         className="absolute top-0 left-0 w-[92%] h-[45vh] md:h-[60vh] z-10"
@@ -25,16 +25,16 @@ export default function HomePage() {
         />
       </svg>
       <HeroSlider />
-      <div>
+      <div id="about">
         <AboutPage />
       </div>
-      <div>
+      <div id="services">
         <OurServices />
       </div>
-       <div>
+       <div id="projects">
         <OurProjects/>
       </div>
-      <div>
+      <div id="contact">
         <GetInTouch/>
       </div>
     </main>

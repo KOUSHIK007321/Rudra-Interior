@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React from 'react';
@@ -29,7 +30,7 @@ const OurProjects = () => {
     ];
 
     return (
-        <section className="bg-[#121212] py-24 px-6  border-[#800000] animate-diagonal-gold ">
+        <section className="bg-[#121212] py-24 px-6 border-b-[6px] border-[#800000] animate-diagonal-gold ">
             <div className="max-w-375 mx-auto">
                 <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16 uppercase tracking-widest">
                     Our <span className="text-[#c5a04d]">Projects</span>
@@ -41,7 +42,7 @@ const OurProjects = () => {
                         <div
                             key={index}
                             /* h-[300px] makes the cards rectangular/widescreen */
-                            className="group relative h-[300px] w-full overflow-hidden rounded-2xl bg-[#0a0a0a] cursor-pointer isolate shadow-2xl transition-all duration-500"
+                            className="group relative h-75 w-full overflow-hidden rounded-2xl bg-[#0a0a0a] cursor-pointer isolate shadow-2xl transition-all duration-500"
                         >
                             {/* Image: GPU accelerated zoom to prevent corner flickering */}
                             <img
@@ -51,7 +52,7 @@ const OurProjects = () => {
                             />
 
                             {/* Dark Overlay: Fades in on hover for text contrast */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                            <div className="absolute inset-0 bg-linear-to-t from-black via-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                             {/* Details: Slide up from the bottom */}
                             <div className="absolute inset-0 flex flex-col justify-end p-8 translate-y-6 group-hover:translate-y-0 transition-transform duration-500 ease-out">

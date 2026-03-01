@@ -7,7 +7,7 @@ const WhatsappButton = () => {
   const whatsappUrl = `https://wa.me/${phoneNumber}`;
 
   return (
-    <div className="fixed bottom-8 right-8 z-[999] flex items-center group">
+    <div className="fixed bottom-8 right-8 z-999 flex items-center group">
       {/* Tooltip with fixed shadow string */}
       <div className="mr-4 px-4 py-2 bg-white text-black text-sm font-bold rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none shadow-md">
         Chat with us

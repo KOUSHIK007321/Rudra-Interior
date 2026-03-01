@@ -33,7 +33,7 @@ const GetInTouch = () => {
         </h2>
 
         {/* Main Content Card */}
-        <div className="bg-[#0a0a0a] rounded-[40px] overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-white/5 min-h-[550px]">
+        <div className="bg-[#0a0a0a] rounded-[40px] overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-white/5 min-h-137.5">
           
           {/* Left Side: Contact Details & Buttons */}
           <div className="lg:w-1/2 p-10 md:p-16 flex flex-col justify-center">
@@ -85,7 +85,7 @@ const GetInTouch = () => {
           </div>
 
           {/* Right Side: Google Map with Glow Border */}
-          <div className="lg:w-1/2 min-h-[450px] relative p-6 md:p-12">
+          <div className="lg:w-1/2 min-h-112.5 relative p-6 md:p-12">
             <div className="w-full h-full rounded-[30px] overflow-hidden border-2 border-[#c5a04d]/40 shadow-[0_0_40px_rgba(197,160,77,0.3)]">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.9786435017646!2d88.39002237604676!3d22.5424756331902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276a666666667%3A0x6b8d96f9f6f6f6f6!2sRudra%20Interior%20%26%20Exterior!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
