@@ -78,7 +78,7 @@ const GetInTouch = () => {
             </div>
           </div>
 
-          <div className="lg:w-1/2 h-[350px] md:h-auto min-h-[400px] p-4 md:p-12">
+          <div className="lg:w-1/2 h-87.5 md:h-auto min-h-100 p-4 md:p-12">
             <div className="w-full h-full rounded-[25px] md:rounded-[30px] overflow-hidden border-2 border-[#c5a04d]/40 shadow-[0_0_40px_rgba(197,160,77,0.3)]">
               <iframe 
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14732.148408466102!2d88.3912190871582!3d22.615065000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89de4d0e9a685%3A0x6b7c3d790d56b681!2sLake%20Town%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1709400000000!5m2!1sen!2sin"
