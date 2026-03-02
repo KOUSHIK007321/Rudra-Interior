@@ -19,7 +19,7 @@ export default function AboutPage() {
     }, [])
 
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden animate-diagonal-gold ">
+        <section className="relative min-h-screen flex items-center overflow-hidden animate-diagonal-gold  bg-black border-b border-[#800000]">
 
             {/* GOLD sweep layers (pure CSS) */}
             <div className="gold-sweep-wrap" aria-hidden="true"></div>

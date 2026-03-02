@@ -25,7 +25,7 @@ const OurServices = () => {
   ];
 
   return (
-    <section className="bg-[#121212]  border-[#800000] py-24 px-6 animate-diagonal-gold">
+    <section className=" bg-black border-b border-[#800000] py-24 px-6 animate-diagonal-gold">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-white text-4xl md:text-5xl font-bold text-center mb-16 uppercase tracking-wider">
           Our <span className="text-[#c5a04d]">Services</span>
