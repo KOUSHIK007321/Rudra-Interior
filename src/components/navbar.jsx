@@ -74,7 +74,7 @@ const Navbar = () => {
   return (
     <nav
       suppressHydrationWarning={true}
-      className={`fixed md:absolute top-0 left-0 w-full z-50 px-6 md:px-10 transition-all duration-1000 ease-in-out py-6 ${isScrolled
+      className={`fixed md:absolute top-0 left-0 w-full z-50 px-6 md:px-10 transition-all duration-1000 ease-in-out py-1 ${isScrolled
         ? "bg-white/5 backdrop-blur-md shadow-sm border-b border-white/5 md:bg-transparent md:border-transparent"
         : "bg-transparent border-b border-transparent"
         }`}
@@ -118,7 +118,7 @@ const Navbar = () => {
         {/* Mobile View Slider */}
         <div
           ref={menuRef}
-          className={`fixed top-20 right-4 w-60 bg-[#1a1608]/95 backdrop-blur-xl border border-yellow-500/30 rounded-2xl overflow-hidden transform transition-all duration-500 ease-in-out md:hidden shadow-2xl z-60 ${isOpen ? 'translate-x-0 opacity-100 scale-100' : 'translate-x-10 opacity-0 scale-95 pointer-events-none'
+          className={`fixed top-25 right-4 w-60 bg-[#1a1608]/95 backdrop-blur-xl border border-yellow-500/30 rounded-2xl overflow-hidden transform transition-all duration-500 ease-in-out md:hidden shadow-2xl z-60 ${isOpen ? 'translate-x-0 opacity-100 scale-100' : 'translate-x-10 opacity-0 scale-95 pointer-events-none'
             }`}
         >
           <div className="flex flex-col items-center py-4">
